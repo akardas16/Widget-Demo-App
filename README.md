@@ -1,7 +1,9 @@
 # Widget-Demo-App
 This repository shows some example Widgets in SwiftUI
 
-<img src="https://user-images.githubusercontent.com/28716129/193448690-91b0f386-b1e9-4c08-8931-4d193b8ed549.PNG" width="35%" >
+<img src="https://user-images.githubusercontent.com/28716129/193448984-c2d225e1-128b-4114-9859-0c276fc46370.jpg" width="20%" >
+<img src="https://user-images.githubusercontent.com/28716129/193448987-ac3d312f-65d8-4794-829e-b8c2e7e41d21.JPG" width="20%" >
+
 
 * Time Widget
 * Github Repo Widget
