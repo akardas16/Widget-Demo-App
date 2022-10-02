@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE1FD2D728E87CBB00424789 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74A42228D5AFB900747815 /* SwiftUI.framework */; };
+		BE1FD2DB28E87EC700424789 /* MibandClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FD2DA28E87EC700424789 /* MibandClass.swift */; };
+		BE1FD2E028E8B8A800424789 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FD2DF28E8B8A800424789 /* LocationManager.swift */; };
+		BE1FD2F028E8BFAA00424789 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1FD2DF28E8B8A800424789 /* LocationManager.swift */; };
+		BE1FD2F328E8C1E400424789 /* LocationWhenInUsePermission in Frameworks */ = {isa = PBXBuildFile; productRef = BE1FD2F228E8C1E400424789 /* LocationWhenInUsePermission */; };
+		BE74A40D28D5AF5700747815 /* Widget_Demo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE74A40C28D5AF5700747815 /* Widget_Demo_AppApp.swift */; };
+		BE74A40F28D5AF5700747815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE74A40E28D5AF5700747815 /* ContentView.swift */; };
+		BE74A41128D5AF5800747815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE74A41028D5AF5800747815 /* Assets.xcassets */; };
+		BE74A41428D5AF5800747815 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE74A41328D5AF5800747815 /* Preview Assets.xcassets */; };
+		BE74A42128D5AFB900747815 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74A42028D5AFB900747815 /* WidgetKit.framework */; };
+		BE74A42328D5AFB900747815 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74A42228D5AFB900747815 /* SwiftUI.framework */; };
+		BE74A42628D5AFB900747815 /* My_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE74A42528D5AFB900747815 /* My_Widget.swift */; };
+		BE74A42928D5AFBD00747815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE74A42828D5AFBD00747815 /* Assets.xcassets */; };
+		BE74A42B28D5AFBD00747815 /* My_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BE74A42728D5AFBA00747815 /* My_Widget.intentdefinition */; };
+		BE74A42C28D5AFBD00747815 /* My_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BE74A42728D5AFBA00747815 /* My_Widget.intentdefinition */; };
+		BE74A42F28D5AFBD00747815 /* My WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE74A41E28D5AFB900747815 /* My WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE855F1B28D701540061B481 /* MonthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F1728D6FFCA0061B481 /* MonthConfig.swift */; };
+		BE855F1C28D7015B0061B481 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F1928D700990061B481 /* Extensions.swift */; };
+		BE855F2228D72D980061B481 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74A42028D5AFB900747815 /* WidgetKit.framework */; };
+		BE855F2328D72D980061B481 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74A42228D5AFB900747815 /* SwiftUI.framework */; };
+		BE855F2628D72D980061B481 /* RepoWatcherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F2528D72D980061B481 /* RepoWatcherWidget.swift */; };
+		BE855F2828D72D9A0061B481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE855F2728D72D9A0061B481 /* Assets.xcassets */; };
+		BE855F2C28D72D9A0061B481 /* RepoWatcherWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE855F2128D72D980061B481 /* RepoWatcherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE855F3928D748560061B481 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F3828D748560061B481 /* RepositoryModel.swift */; };
+		BE855F3A28D748560061B481 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F3828D748560061B481 /* RepositoryModel.swift */; };
+		BE855F3B28D748560061B481 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F3828D748560061B481 /* RepositoryModel.swift */; };
+		BE855F3D28D75FD60061B481 /* WidgetNetworkingMngr.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F3C28D75FD60061B481 /* WidgetNetworkingMngr.swift */; };
+		BE855F3E28D75FD60061B481 /* WidgetNetworkingMngr.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F3C28D75FD60061B481 /* WidgetNetworkingMngr.swift */; };
+		BE855F3F28D75FD70061B481 /* WidgetNetworkingMngr.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE855F3C28D75FD60061B481 /* WidgetNetworkingMngr.swift */; };
+		BECF0AAA28E87B7500AEBB54 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE74A42028D5AFB900747815 /* WidgetKit.framework */; };
+		BECF0AAE28E87B7500AEBB54 /* MibandWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECF0AAD28E87B7500AEBB54 /* MibandWidget.swift */; };
+		BECF0AB028E87B7900AEBB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECF0AAF28E87B7900AEBB54 /* Assets.xcassets */; };
+		BECF0AB428E87B7900AEBB54 /* MibandWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BECF0AA928E87B7500AEBB54 /* MibandWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEE9DE9028E991EA0003A418 /* MiBand2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9DE8E28E991E90003A418 /* MiBand2Service.swift */; };
+		BEE9DE9128E991EA0003A418 /* MiBand2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9DE8E28E991E90003A418 /* MiBand2Service.swift */; };
+		BEE9DE9228E991EA0003A418 /* MiBand2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9DE8E28E991E90003A418 /* MiBand2Service.swift */; };
+		BEE9DE9328E991EA0003A418 /* MiBand2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9DE8E28E991E90003A418 /* MiBand2Service.swift */; };
+		BEE9DE9428E991EA0003A418 /* MiBand2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9DE8F28E991EA0003A418 /* MiBand2.swift */; };
+		BEE9DE9528E991EA0003A418 /* MiBand2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9DE8F28E991EA0003A418 /* MiBand2.swift */; };
+		BEE9DE9628E991EA0003A418 /* MiBand2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9DE8F28E991EA0003A418 /* MiBand2.swift */; };
+		BEE9DE9728E991EA0003A418 /* MiBand2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9DE8F28E991EA0003A418 /* MiBand2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE74A42D28D5AFBD00747815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE74A40128D5AF5700747815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE74A41D28D5AFB900747815;
+			remoteInfo = "My WidgetExtension";
+		};
+		BE855F2A28D72D9A0061B481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE74A40128D5AF5700747815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE855F2028D72D980061B481;
+			remoteInfo = RepoWatcherWidgetExtension;
+		};
+		BECF0AB228E87B7900AEBB54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE74A40128D5AF5700747815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BECF0AA828E87B7500AEBB54;
+			remoteInfo = MibandWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE74A43328D5AFBD00747815 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE855F2C28D72D9A0061B481 /* RepoWatcherWidgetExtension.appex in Embed Foundation Extensions */,
+				BECF0AB428E87B7900AEBB54 /* MibandWidgetExtension.appex in Embed Foundation Extensions */,
+				BE74A42F28D5AFBD00747815 /* My WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE1FD2DA28E87EC700424789 /* MibandClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MibandClass.swift; sourceTree = "<group>"; };
+		BE1FD2DE28E882DA00424789 /* Widget-Demo-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Widget-Demo-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BE1FD2DF28E8B8A800424789 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BE74A40928D5AF5700747815 /* Widget Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE74A40C28D5AF5700747815 /* Widget_Demo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget_Demo_AppApp.swift; sourceTree = "<group>"; };
+		BE74A40E28D5AF5700747815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE74A41028D5AF5800747815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE74A41328D5AF5800747815 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BE74A41E28D5AFB900747815 /* My WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "My WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE74A42028D5AFB900747815 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BE74A42228D5AFB900747815 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BE74A42528D5AFB900747815 /* My_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Widget.swift; sourceTree = "<group>"; };
+		BE74A42728D5AFBA00747815 /* My_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = My_Widget.intentdefinition; sourceTree = "<group>"; };
+		BE74A42828D5AFBD00747815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE74A42A28D5AFBD00747815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE855F1728D6FFCA0061B481 /* MonthConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthConfig.swift; sourceTree = "<group>"; };
+		BE855F1928D700990061B481 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BE855F2128D72D980061B481 /* RepoWatcherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RepoWatcherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE855F2528D72D980061B481 /* RepoWatcherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoWatcherWidget.swift; sourceTree = "<group>"; };
+		BE855F2728D72D9A0061B481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE855F2928D72D9A0061B481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE855F3828D748560061B481 /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
+		BE855F3C28D75FD60061B481 /* WidgetNetworkingMngr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetNetworkingMngr.swift; sourceTree = "<group>"; };
+		BECF0AA928E87B7500AEBB54 /* MibandWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MibandWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECF0AAD28E87B7500AEBB54 /* MibandWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MibandWidget.swift; sourceTree = "<group>"; };
+		BECF0AAF28E87B7900AEBB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BECF0AB128E87B7900AEBB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE9DE8E28E991E90003A418 /* MiBand2Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiBand2Service.swift; sourceTree = "<group>"; };
+		BEE9DE8F28E991EA0003A418 /* MiBand2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiBand2.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE74A40628D5AF5700747815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1FD2F328E8C1E400424789 /* LocationWhenInUsePermission in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE74A41B28D5AFB900747815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE74A42328D5AFB900747815 /* SwiftUI.framework in Frameworks */,
+				BE74A42128D5AFB900747815 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE855F1E28D72D980061B481 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE855F2328D72D980061B481 /* SwiftUI.framework in Frameworks */,
+				BE855F2228D72D980061B481 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF0AA628E87B7500AEBB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1FD2D728E87CBB00424789 /* SwiftUI.framework in Frameworks */,
+				BECF0AAA28E87B7500AEBB54 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE74A40028D5AF5700747815 = {
+			isa = PBXGroup;
+			children = (
+				BE74A40B28D5AF5700747815 /* Widget Demo App */,
+				BE74A42428D5AFB900747815 /* My Widget */,
+				BE855F2428D72D980061B481 /* RepoWatcherWidget */,
+				BECF0AAC28E87B7500AEBB54 /* MibandWidget */,
+				BE74A41F28D5AFB900747815 /* Frameworks */,
+				BE74A40A28D5AF5700747815 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE74A40A28D5AF5700747815 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE74A40928D5AF5700747815 /* Widget Demo App.app */,
+				BE74A41E28D5AFB900747815 /* My WidgetExtension.appex */,
+				BE855F2128D72D980061B481 /* RepoWatcherWidgetExtension.appex */,
+				BECF0AA928E87B7500AEBB54 /* MibandWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE74A40B28D5AF5700747815 /* Widget Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				BE1FD2DE28E882DA00424789 /* Widget-Demo-App-Info.plist */,
+				BECF0A9C28E86C9900AEBB54 /* Miband */,
+				BE74A40C28D5AF5700747815 /* Widget_Demo_AppApp.swift */,
+				BE74A40E28D5AF5700747815 /* ContentView.swift */,
+				BE74A41028D5AF5800747815 /* Assets.xcassets */,
+				BE74A41228D5AF5800747815 /* Preview Content */,
+				BE855F3828D748560061B481 /* RepositoryModel.swift */,
+				BE855F3C28D75FD60061B481 /* WidgetNetworkingMngr.swift */,
+			);
+			path = "Widget Demo App";
+			sourceTree = "<group>";
+		};
+		BE74A41228D5AF5800747815 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BE74A41328D5AF5800747815 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BE74A41F28D5AFB900747815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE74A42028D5AFB900747815 /* WidgetKit.framework */,
+				BE74A42228D5AFB900747815 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE74A42428D5AFB900747815 /* My Widget */ = {
+			isa = PBXGroup;
+			children = (
+				BE74A42528D5AFB900747815 /* My_Widget.swift */,
+				BE855F1728D6FFCA0061B481 /* MonthConfig.swift */,
+				BE74A42728D5AFBA00747815 /* My_Widget.intentdefinition */,
+				BE74A42828D5AFBD00747815 /* Assets.xcassets */,
+				BE74A42A28D5AFBD00747815 /* Info.plist */,
+				BE855F1928D700990061B481 /* Extensions.swift */,
+			);
+			path = "My Widget";
+			sourceTree = "<group>";
+		};
+		BE855F2428D72D980061B481 /* RepoWatcherWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BE855F2528D72D980061B481 /* RepoWatcherWidget.swift */,
+				BE855F2728D72D9A0061B481 /* Assets.xcassets */,
+				BE855F2928D72D9A0061B481 /* Info.plist */,
+			);
+			path = RepoWatcherWidget;
+			sourceTree = "<group>";
+		};
+		BECF0A9C28E86C9900AEBB54 /* Miband */ = {
+			isa = PBXGroup;
+			children = (
+				BEE9DE8F28E991EA0003A418 /* MiBand2.swift */,
+				BEE9DE8E28E991E90003A418 /* MiBand2Service.swift */,
+			);
+			path = Miband;
+			sourceTree = "<group>";
+		};
+		BECF0AAC28E87B7500AEBB54 /* MibandWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BECF0AAD28E87B7500AEBB54 /* MibandWidget.swift */,
+				BECF0AAF28E87B7900AEBB54 /* Assets.xcassets */,
+				BECF0AB128E87B7900AEBB54 /* Info.plist */,
+				BE1FD2DA28E87EC700424789 /* MibandClass.swift */,
+				BE1FD2DF28E8B8A800424789 /* LocationManager.swift */,
+			);
+			path = MibandWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE74A40828D5AF5700747815 /* Widget Demo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE74A41728D5AF5800747815 /* Build configuration list for PBXNativeTarget "Widget Demo App" */;
+			buildPhases = (
+				BE74A40528D5AF5700747815 /* Sources */,
+				BE74A40628D5AF5700747815 /* Frameworks */,
+				BE74A40728D5AF5700747815 /* Resources */,
+				BE74A43328D5AFBD00747815 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE74A42E28D5AFBD00747815 /* PBXTargetDependency */,
+				BE855F2B28D72D9A0061B481 /* PBXTargetDependency */,
+				BECF0AB328E87B7900AEBB54 /* PBXTargetDependency */,
+			);
+			name = "Widget Demo App";
+			packageProductDependencies = (
+				BE1FD2F228E8C1E400424789 /* LocationWhenInUsePermission */,
+			);
+			productName = "Widget Demo App";
+			productReference = BE74A40928D5AF5700747815 /* Widget Demo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE74A41D28D5AFB900747815 /* My WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE74A43028D5AFBD00747815 /* Build configuration list for PBXNativeTarget "My WidgetExtension" */;
+			buildPhases = (
+				BE74A41A28D5AFB900747815 /* Sources */,
+				BE74A41B28D5AFB900747815 /* Frameworks */,
+				BE74A41C28D5AFB900747815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My WidgetExtension";
+			productName = "My WidgetExtension";
+			productReference = BE74A41E28D5AFB900747815 /* My WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BE855F2028D72D980061B481 /* RepoWatcherWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE855F2D28D72D9B0061B481 /* Build configuration list for PBXNativeTarget "RepoWatcherWidgetExtension" */;
+			buildPhases = (
+				BE855F1D28D72D980061B481 /* Sources */,
+				BE855F1E28D72D980061B481 /* Frameworks */,
+				BE855F1F28D72D980061B481 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepoWatcherWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = RepoWatcherWidgetExtension;
+			productReference = BE855F2128D72D980061B481 /* RepoWatcherWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BECF0AA828E87B7500AEBB54 /* MibandWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BECF0AB528E87B7900AEBB54 /* Build configuration list for PBXNativeTarget "MibandWidgetExtension" */;
+			buildPhases = (
+				BECF0AA528E87B7500AEBB54 /* Sources */,
+				BECF0AA628E87B7500AEBB54 /* Frameworks */,
+				BECF0AA728E87B7500AEBB54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MibandWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MibandWidgetExtension;
+			productReference = BECF0AA928E87B7500AEBB54 /* MibandWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE74A40128D5AF5700747815 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					BE74A40828D5AF5700747815 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					BE74A41D28D5AFB900747815 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					BE855F2028D72D980061B481 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					BECF0AA828E87B7500AEBB54 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = BE74A40428D5AF5700747815 /* Build configuration list for PBXProject "Widget Demo App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE74A40028D5AF5700747815;
+			packageReferences = (
+				BE1FD2F128E8C1E400424789 /* XCRemoteSwiftPackageReference "PermissionsKit" */,
+			);
+			productRefGroup = BE74A40A28D5AF5700747815 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE74A40828D5AF5700747815 /* Widget Demo App */,
+				BE74A41D28D5AFB900747815 /* My WidgetExtension */,
+				BE855F2028D72D980061B481 /* RepoWatcherWidgetExtension */,
+				BECF0AA828E87B7500AEBB54 /* MibandWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE74A40728D5AF5700747815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE74A41428D5AF5800747815 /* Preview Assets.xcassets in Resources */,
+				BE74A41128D5AF5800747815 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE74A41C28D5AFB900747815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE74A42928D5AFBD00747815 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE855F1F28D72D980061B481 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE855F2828D72D9A0061B481 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF0AA728E87B7500AEBB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECF0AB028E87B7900AEBB54 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE74A40528D5AF5700747815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE74A42C28D5AFBD00747815 /* My_Widget.intentdefinition in Sources */,
+				BE855F3928D748560061B481 /* RepositoryModel.swift in Sources */,
+				BE1FD2F028E8BFAA00424789 /* LocationManager.swift in Sources */,
+				BEE9DE9028E991EA0003A418 /* MiBand2Service.swift in Sources */,
+				BE855F3D28D75FD60061B481 /* WidgetNetworkingMngr.swift in Sources */,
+				BEE9DE9428E991EA0003A418 /* MiBand2.swift in Sources */,
+				BE74A40F28D5AF5700747815 /* ContentView.swift in Sources */,
+				BE74A40D28D5AF5700747815 /* Widget_Demo_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE74A41A28D5AFB900747815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE74A42B28D5AFBD00747815 /* My_Widget.intentdefinition in Sources */,
+				BE855F3A28D748560061B481 /* RepositoryModel.swift in Sources */,
+				BE855F1B28D701540061B481 /* MonthConfig.swift in Sources */,
+				BE74A42628D5AFB900747815 /* My_Widget.swift in Sources */,
+				BE855F1C28D7015B0061B481 /* Extensions.swift in Sources */,
+				BEE9DE9128E991EA0003A418 /* MiBand2Service.swift in Sources */,
+				BEE9DE9528E991EA0003A418 /* MiBand2.swift in Sources */,
+				BE855F3E28D75FD60061B481 /* WidgetNetworkingMngr.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE855F1D28D72D980061B481 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE855F2628D72D980061B481 /* RepoWatcherWidget.swift in Sources */,
+				BE855F3B28D748560061B481 /* RepositoryModel.swift in Sources */,
+				BE855F3F28D75FD70061B481 /* WidgetNetworkingMngr.swift in Sources */,
+				BEE9DE9628E991EA0003A418 /* MiBand2.swift in Sources */,
+				BEE9DE9228E991EA0003A418 /* MiBand2Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BECF0AA528E87B7500AEBB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECF0AAE28E87B7500AEBB54 /* MibandWidget.swift in Sources */,
+				BE1FD2E028E8B8A800424789 /* LocationManager.swift in Sources */,
+				BE1FD2DB28E87EC700424789 /* MibandClass.swift in Sources */,
+				BEE9DE9728E991EA0003A418 /* MiBand2.swift in Sources */,
+				BEE9DE9328E991EA0003A418 /* MiBand2Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE74A42E28D5AFBD00747815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE74A41D28D5AFB900747815 /* My WidgetExtension */;
+			targetProxy = BE74A42D28D5AFBD00747815 /* PBXContainerItemProxy */;
+		};
+		BE855F2B28D72D9A0061B481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE855F2028D72D980061B481 /* RepoWatcherWidgetExtension */;
+			targetProxy = BE855F2A28D72D9A0061B481 /* PBXContainerItemProxy */;
+		};
+		BECF0AB328E87B7900AEBB54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BECF0AA828E87B7500AEBB54 /* MibandWidgetExtension */;
+			targetProxy = BECF0AB228E87B7900AEBB54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BE74A41528D5AF5800747815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE74A41628D5AF5800747815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE74A41828D5AF5800747815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Widget Demo App/Preview Content\"";
+				DEVELOPMENT_TEAM = MHT8X3GHR9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Widget-Demo-App-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "permission required";
+				INFOPLIST_KEY_NSLocationUsageDescription = "needs perm";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "need location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "akardas16.Widget-Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE74A41928D5AF5800747815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Widget Demo App/Preview Content\"";
+				DEVELOPMENT_TEAM = MHT8X3GHR9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Widget-Demo-App-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "permission required";
+				INFOPLIST_KEY_NSLocationUsageDescription = "needs perm";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "need location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "akardas16.Widget-Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE74A43128D5AFBD00747815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHT8X3GHR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "My Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = needs;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "akardas16.Widget-Demo-App.My-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE74A43228D5AFBD00747815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHT8X3GHR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "My Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "My Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = needs;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "akardas16.Widget-Demo-App.My-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE855F2E28D72D9B0061B481 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHT8X3GHR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RepoWatcherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RepoWatcherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "akardas16.Widget-Demo-App.RepoWatcherWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE855F2F28D72D9B0061B481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHT8X3GHR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RepoWatcherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RepoWatcherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "akardas16.Widget-Demo-App.RepoWatcherWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BECF0AB628E87B7900AEBB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHT8X3GHR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MibandWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MibandWidget;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "needs permission";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "akardas16.Widget-Demo-App.MibandWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BECF0AB728E87B7900AEBB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHT8X3GHR9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MibandWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MibandWidget;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "needs permission";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "akardas16.Widget-Demo-App.MibandWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE74A40428D5AF5700747815 /* Build configuration list for PBXProject "Widget Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE74A41528D5AF5800747815 /* Debug */,
+				BE74A41628D5AF5800747815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE74A41728D5AF5800747815 /* Build configuration list for PBXNativeTarget "Widget Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE74A41828D5AF5800747815 /* Debug */,
+				BE74A41928D5AF5800747815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE74A43028D5AFBD00747815 /* Build configuration list for PBXNativeTarget "My WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE74A43128D5AFBD00747815 /* Debug */,
+				BE74A43228D5AFBD00747815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE855F2D28D72D9B0061B481 /* Build configuration list for PBXNativeTarget "RepoWatcherWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE855F2E28D72D9B0061B481 /* Debug */,
+				BE855F2F28D72D9B0061B481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BECF0AB528E87B7900AEBB54 /* Build configuration list for PBXNativeTarget "MibandWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BECF0AB628E87B7900AEBB54 /* Debug */,
+				BECF0AB728E87B7900AEBB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE1FD2F128E8C1E400424789 /* XCRemoteSwiftPackageReference "PermissionsKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparrowcode/PermissionsKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE1FD2F228E8C1E400424789 /* LocationWhenInUsePermission */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE1FD2F128E8C1E400424789 /* XCRemoteSwiftPackageReference "PermissionsKit" */;
+			productName = LocationWhenInUsePermission;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BE74A40128D5AF5700747815 /* Project object */;
+}

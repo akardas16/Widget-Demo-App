@@ -7,16 +7,15 @@
 
 import WidgetKit
 import SwiftUI
-import SDWebImageSwiftUI
 import Combine
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> RepoEntry {
-        RepoEntry(date: Date(), repository: .testRepo, image: UIImage())
+        RepoEntry(date: Date(), repository: .testRepo, image: UIImage(named: "image")!)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (RepoEntry) -> ()) {
-        let entry = RepoEntry(date: Date(), repository: .testRepo, image: UIImage())
+        let entry = RepoEntry(date: Date(), repository: .testRepo, image: UIImage(named: "image")!)
         completion(entry)
     }
 
